@@ -42,7 +42,7 @@ export const DisplayCard = ({ vehicleData }: DisplayCardProps) => {
           <Image style={styles.carImage} source={{ uri: vehicleImage }} />
         </View>
 
-        <View>
+        <View style={{ padding: 10 }}>
           <View style={styles.detailsContainer}>
             <Text style={{ flex: 0.2 }}>Year : </Text>
             <Text>{vehicle.car_model_year}</Text>
@@ -72,7 +72,7 @@ export const DisplayCard = ({ vehicleData }: DisplayCardProps) => {
 const styles = StyleSheet.create({
   cardContainer: {
     borderColor: "#D5D5D5",
-    borderWidth: "1px",
+    backgroundColor: "#F5F3F5",
     width: "100%",
     marginVertical: 10,
     padding: 10,
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.3,
     shadowRadius: 3,
-    shadowColor: "#FDFDFD",
+    shadowColor: "#302B27",
   },
   imageContainer: {
     flex: 1,
