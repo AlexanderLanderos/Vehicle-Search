@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "FFFFFF" }}>
+    <SafeAreaView style={styles.safeArea}>
       <Header />
       <View style={styles.container}>
         <FlatList
